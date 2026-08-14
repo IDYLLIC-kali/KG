@@ -476,68 +476,6 @@
     flex-direction:column;
     align-items:flex-end;
   }
-  .wa-panel{
-    display:none;
-    flex-direction:column;
-    width:290px;
-    background:#fff;
-    border-radius:14px;
-    box-shadow:var(--shadow-lg);
-    overflow:hidden;
-    margin-bottom:14px;
-    border:1px solid var(--line);
-  }
-  .wa-panel.open{
-    display:flex;
-  }
-  .wa-panel-head{
-    background:var(--whatsapp);
-    color:#fff;
-    padding:16px 18px;
-  }
-  .wa-panel-head b{
-    display:block;
-    font-family:'Poppins',sans-serif;
-    font-size:15px;
-  }
-  .wa-panel-head span{
-    font-size:12px;
-    opacity:.9;
-  }
-  .wa-agent{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:13px 16px;
-    text-decoration:none;
-    color:var(--ink);
-    border-bottom:1px solid var(--line);
-    transition:background .15s;
-  }
-  .wa-agent:last-child{border-bottom:none;}
-  .wa-agent:hover{background:#f4fbf6;}
-  .wa-agent .av{
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    background:var(--blue-tint);
-    color:var(--blue);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Poppins',sans-serif;
-    font-weight:700;
-    font-size:13px;
-    flex-shrink:0;
-  }
-  .wa-agent b{
-    display:block;
-    font-size:13.5px;
-  }
-  .wa-agent span{
-    font-size:12px;
-    color:var(--ink-soft);
-  }
   .wa-fab{
     width:60px;
     height:60px;
@@ -564,12 +502,6 @@
     .hero{padding:60px 0 46px;}
     .form-row{grid-template-columns:1fr;}
     .bridge-art{min-height:220px;order:-1;}
-    .wa-panel{
-      width:260px;
-      position:fixed;
-      bottom:90px;
-      right:10px;
-    }
     .wa-fab{
       width:56px;
       height:56px;
@@ -1040,7 +972,7 @@
         </div>
         <div class="item">
           <div class="ic">💬</div>
-          <div><h4>WhatsApp</h4><p>Tap the green button (bottom-right) to message a department directly.</p></div>
+          <div><h4>WhatsApp</h4><p>Tap the green button (bottom-right) to message us directly.</p></div>
         </div>
         <div class="map-box">📍 the lattitude is -1.258174, and the longitude is 36.818733.</div>
       </div>
@@ -1117,25 +1049,7 @@
 
 <!-- ================= WHATSAPP WIDGET ================= -->
 <div class="wa-widget">
-  <div class="wa-panel" id="waPanel">
-    <div class="wa-panel-head">
-      <b>Chat with our team</b>
-      <span>Typically replies within minutes</span>
-    </div>
-    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%27d%20like%20information%20about%20applying%20for%20a%20job%20in%20the%20Gulf." target="_blank" rel="noopener">
-      <div class="av">GA</div>
-      <div><b>General Inquiries</b><span>Applications & eligibility</span></div>
-    </a>
-    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%20have%20a%20question%20about%20the%2050%25%20travel%20cost%20support." target="_blank" rel="noopener">
-      <div class="av">TS</div>
-      <div><b>Travel Support Desk</b><span>50% travel cost & refund terms</span></div>
-    </a>
-    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%20need%20help%20with%20my%20documents%20and%20travel%20preparation." target="_blank" rel="noopener">
-      <div class="av">DP</div>
-      <div><b>Documents & Departure</b><span>Passports, visas, orientation</span></div>
-    </a>
-  </div>
-  <button class="wa-fab" id="waFab" aria-label="Open WhatsApp chat" onclick="openWhatsAppDirect()">
+  <button class="wa-fab" id="waFab" aria-label="Chat on WhatsApp" onclick="openWhatsAppDirect()">
     <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.7 5 1.9 7.1L3 29l6.4-2.1c2 .1 3.9-1 3.9-1 .9.2 1.8.3 2.7.3 7 0 12.7-5.7 12.7-12.7S23 3 16 3z" fill="white"/><path d="M22.4 19.1c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z" fill="#25D366"/></svg>
   </button>
 </div>
@@ -1183,16 +1097,8 @@
     }
   });
 
-  // WhatsApp widget toggle - panel opens/closes
-  function toggleWA(e){
-    if(e) e.preventDefault();
-    const panel = document.getElementById('waPanel');
-    panel.classList.toggle('open');
-  }
-
   // WhatsApp direct redirect - FAB button goes directly to WhatsApp
   function openWhatsAppDirect() {
-    // Open WhatsApp with general inquiry message
     window.open('https://wa.me/254748220487?text=Hi%2C%20I%27d%20like%20information%20about%20applying%20for%20a%20job%20in%20the%20Gulf.', '_blank');
   }
 
