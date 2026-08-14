@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenya Gulf Connect Agency Limited — Your Bridge to Gulf Career Opportunities</title>
+<meta name="description" content="Kenya Gulf Connect Agency Limited connects Kenyan job seekers with verified employment opportunities across the Gulf, with travel support and end-to-end placement assistance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0d1b3e;
+    --blue:#1a2a6c;
+    --blue-tint:#eef1f8;
+    --gold:#f0a500;
+    --gold-deep:#c9860a;
+    --paper:#faf8f3;
+    --ink:#1c2340;
+    --ink-soft:#5a6382;
+    --line:#e2e2d8;
+    --whatsapp:#25D366;
+    --whatsapp-dark:#1da851;
+    --radius:10px;
+    --shadow: 0 12px 30px -14px rgba(13,27,62,0.28);
+    --shadow-lg: 0 24px 60px -20px rgba(13,27,62,0.35);
+    --wrap: 1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Poppins',sans-serif;
+    margin:0 0 .5em;
+    color:var(--navy);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);
+    margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);display:inline-block;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;
+    padding:14px 26px;border-radius:8px;text-decoration:none;border:2px solid transparent;
+    cursor:pointer;transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 24px -10px rgba(240,165,0,.55);}
+  .btn-gold:hover{background:var(--gold-deep);}
+  .btn-outline{background:transparent;border-color:rgba(255,255,255,.55);color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+  .btn-whatsapp{background:var(--whatsapp);color:#fff;}
+  .btn-whatsapp:hover{background:var(--whatsapp-dark);}
+  .btn-navy{background:var(--blue);color:#fff;}
+  .btn-navy:hover{background:var(--navy);}
+  section{padding:96px 0;}
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head p{color:var(--ink-soft);font-size:17px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:rgba(13,27,62,.97);
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+  }
+  .navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 24px;
+    max-width:var(--wrap);
+    margin:0 auto;
+    position:relative;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#fff;
+    flex-shrink:0;
+  }
+  .logo-mark{
+    width:38px;
+    height:38px;
+    border-radius:8px;
+    background:linear-gradient(135deg,var(--gold),#ffce5c);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    color:var(--navy);
+    font-size:16px;
+    flex-shrink:0;
+  }
+  .logo-text{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    line-height:1.15;
+  }
+  .logo-text span{
+    display:block;
+    font-family:'Inter',sans-serif;
+    font-weight:500;
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--gold);
+    text-transform:uppercase;
+  }
+  nav.links{
+    display:flex;
+    gap:28px;
+    align-items:center;
+  }
+  nav.links a{
+    color:#dfe4f5;
+    text-decoration:none;
+    font-size:14.5px;
+    font-weight:500;
+    padding:6px 2px;
+    border-bottom:2px solid transparent;
+    transition:color .15s, border-color .15s;
+    white-space:nowrap;
+  }
+  nav.links a:hover{
+    color:#fff;
+    border-color:var(--gold);
+  }
+  .nav-cta{
+    display:flex;
+    gap:10px;
+    align-items:center;
+  }
+  .nav-cta .btn{
+    padding:10px 18px;
+    font-size:13.5px;
+  }
+  .burger{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+    padding:8px;
+    z-index:10001;
+    position:relative;
+  }
+
+  /* Mobile Nav Overlay */
+  @media (max-width:980px){
+    .burger{
+      display:block;
+    }
+    nav.links{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      height:100vh;
+      height:100dvh;
+      background:var(--navy);
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:30px;
+      padding:40px 24px;
+      transform:translateX(100%);
+      transition:transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y:auto;
+      z-index:10000;
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+    }
+    nav.links.open{
+      transform:translateX(0);
+      opacity:1;
+      visibility:visible;
+      pointer-events:all;
+    }
+    nav.links a{
+      font-size:20px;
+      color:#dfe4f5;
+      padding:10px 20px;
+      width:100%;
+      text-align:center;
+      border-bottom:2px solid transparent;
+      transition:color .2s, border-color .2s;
+    }
+    nav.links a:hover{
+      color:var(--gold);
+      border-color:var(--gold);
+    }
+    .nav-cta{
+      display:none;
+    }
+    /* Close button X */
+    .burger.active::before{
+      content:"✕";
+      font-size:28px;
+    }
+    .burger:not(.active)::before{
+      content:"☰";
+      font-size:28px;
+    }
+    .burger::before{
+      display:block;
+    }
+    .burger span{
+      display:none;
+    }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:radial-gradient(120% 140% at 15% -10%, #16255a 0%, var(--navy) 55%, #08122e 100%);
+    color:#fff;padding:88px 0 70px;
+  }
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;}
+  .hero h1{color:#fff;font-size:clamp(34px,4.4vw,54px);margin-bottom:20px;}
+  .hero h1 em{font-style:normal;color:var(--gold);}
+  .hero p.lead{color:#c7cde3;font-size:18px;max-width:490px;margin-bottom:32px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
+  .hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
+  .hero-stats div{border-left:2px solid rgba(240,165,0,.5);padding-left:14px;}
+  .hero-stats b{display:block;font-family:'Poppins',sans-serif;font-size:26px;color:#fff;}
+  .hero-stats span{font-size:12.5px;color:#a9b1cf;text-transform:uppercase;letter-spacing:.06em;}
+
+  .bridge-art{position:relative;width:100%;height:100%;min-height:360px;}
+  .bridge-art svg{width:100%;height:auto;}
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust-strip{background:var(--blue);color:#fff;padding:18px 0;}
+  .trust-strip .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-family:'Poppins',sans-serif;font-weight:600;font-size:13.5px;letter-spacing:.03em;}
+  .trust-strip .wrap span{opacity:.92;display:flex;align-items:center;gap:8px;}
+
+  /* ---------- ABOUT / DIFFERENTIATORS ---------- */
+  .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 26px;box-shadow:var(--shadow);
+  }
+  .card .icon{
+    width:46px;height:46px;border-radius:10px;background:var(--blue-tint);
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+    font-size:24px;
+  }
+  .card h3{font-size:18px;margin-bottom:8px;}
+  .card p{color:var(--ink-soft);font-size:15px;margin-bottom:0;}
+
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
+  .about-grid .art{
+    background:linear-gradient(160deg,var(--blue),var(--navy));
+    border-radius:16px;padding:34px;color:#fff;position:relative;overflow:hidden;
+  }
+  .about-grid .art h3{color:#fff;font-size:20px;}
+  .about-grid .art p{color:#c7cde3;font-size:14.5px;}
+  .flag-row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;}
+  .flag-chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 14px;font-size:13px;font-family:'Poppins',sans-serif;font-weight:600;}
+
+  /* ---------- PROCESS ---------- */
+  .process-alt{background:var(--navy);color:#fff;}
+  .process-alt .section-head p{color:#a9b1cf;}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step;}
+  .step{position:relative;padding-top:8px;}
+  .step .num{
+    font-family:'Poppins',sans-serif;font-weight:800;font-size:15px;color:var(--navy);
+    background:var(--gold);width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+  }
+  .step h4{color:#fff;font-size:16.5px;margin-bottom:8px;}
+  .step p{color:#a9b1cf;font-size:14px;margin-bottom:0;}
+  .step-connector{
+    position:absolute;top:19px;left:calc(100% - 12px);width:calc(100% - 26px);
+    height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 8px, transparent 8px 14px);
+  }
+  @media (max-width:900px){.step-connector{display:none;}}
+
+  /* ---------- COUNTRIES ---------- */
+  .country-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px;}
+  .country{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 14px;text-align:center;transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .country:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .country .flag{font-size:30px;margin-bottom:10px;}
+  .country h4{font-size:14.5px;margin:0;color:var(--navy);}
+
+  .job-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px;}
+  .job-cat{
+    display:flex;align-items:center;gap:12px;background:var(--blue-tint);
+    border-radius:8px;padding:14px 16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color:var(--blue);
+  }
+
+  /* ---------- VACANCIES ---------- */
+  .vacancy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .vacancy-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  }
+  .vtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+  .vflag{font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:var(--ink-soft);}
+  .vbadge{
+    background:var(--blue-tint);color:var(--blue);font-family:'Poppins',sans-serif;font-weight:700;
+    font-size:11.5px;padding:5px 10px;border-radius:20px;white-space:nowrap;
+  }
+  .vacancy-card h4{font-size:16.5px;margin-bottom:8px;}
+  .vcat{
+    display:inline-block;align-self:flex-start;font-size:11.5px;font-weight:600;font-family:'Poppins',sans-serif;
+    color:var(--gold-deep);background:#fdf3e0;padding:4px 10px;border-radius:6px;margin-bottom:12px;
+  }
+  .vacancy-card p{font-size:13.5px;color:var(--ink-soft);margin-bottom:16px;flex-grow:1;}
+  .vapply{
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:13.5px;color:var(--blue);
+    text-decoration:none;border-top:1px solid var(--line);padding-top:14px;
+  }
+  .vapply:hover{color:var(--gold-deep);}
+
+  /* ---------- 50% SUPPORT ---------- */
+  .support{
+    background:linear-gradient(180deg,#fff, var(--blue-tint) 100%);
+    position:relative;
+  }
+  .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+  .support-flow{display:flex;flex-direction:column;gap:0;}
+  .flow-step{display:flex;gap:18px;position:relative;padding-bottom:38px;}
+  .flow-step:last-child{padding-bottom:0;}
+  .flow-step::before{
+    content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;
+    background:repeating-linear-gradient(180deg,var(--gold) 0 6px, transparent 6px 11px);
+  }
+  .flow-step:last-child::before{display:none;}
+  .flow-dot{
+    flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;
+  }
+  .flow-step h4{font-size:16.5px;margin-bottom:6px;}
+  .flow-step p{color:var(--ink-soft);font-size:14.5px;margin-bottom:0;}
+
+  .support-card{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:var(--shadow-lg);
+    border-top:5px solid var(--gold);
+  }
+  .support-card .big-stat{font-family:'Poppins',sans-serif;font-weight:800;font-size:52px;color:var(--blue);line-height:1;}
+  .support-card .big-stat span{font-size:20px;color:var(--gold-deep);}
+  .support-card ul{padding-left:0;list-style:none;margin:22px 0;}
+  .support-card li{display:flex;gap:10px;font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+  .support-card li::before{content:"✓";color:var(--whatsapp-dark);font-weight:700;flex-shrink:0;}
+  .fine-print{
+    font-size:12.5px;color:var(--ink-soft);background:var(--blue-tint);border-radius:8px;padding:14px 16px;margin-top:8px;
+  }
+
+  /* ---------- APPLY / FORMS ---------- */
+  .apply-alt{background:var(--navy);color:#fff;}
+  .apply-alt .section-head p{color:#a9b1cf;}
+  .apply-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
+  .form-card{
+    background:#fff;color:var(--ink);border-radius:14px;padding:32px;box-shadow:var(--shadow-lg);
+  }
+  .form-card .icon-row{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+  .form-card .pdf-icon{
+    width:52px;height:52px;border-radius:10px;background:#fdece0;color:#c94b2c;
+    display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;font-size:12px;flex-shrink:0;
+  }
+  .form-card h3{font-size:19px;margin-bottom:2px;}
+  .form-card .meta{font-size:12.5px;color:var(--ink-soft);}
+  .checklist{margin:20px 0;padding:0;list-style:none;}
+  .checklist li{font-size:14px;color:var(--ink-soft);padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;}
+  .checklist li::before{content:"";width:16px;height:16px;border:2px solid var(--gold);border-radius:4px;flex-shrink:0;margin-top:2px;}
+
+  .apply-steps{list-style:none;padding:0;margin:0 0 30px;counter-reset:astep;}
+  .apply-steps li{
+    counter-increment:astep;position:relative;padding-left:44px;margin-bottom:22px;font-size:15px;color:#c7cde3;
+  }
+  .apply-steps li::before{
+    content:counter(astep);position:absolute;left:0;top:-2px;
+    width:30px;height:30px;border-radius:50%;background:var(--gold);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;font-size:14px;
+  }
+  .apply-steps li b{display:block;color:#fff;font-family:'Poppins',sans-serif;font-size:15.5px;margin-bottom:3px;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .testi{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);
+  }
+  .testi .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px;font-size:15px;}
+  .testi p.quote{color:var(--ink);font-size:15px;margin-bottom:20px;}
+  .testi-person{display:flex;align-items:center;gap:12px;}
+  .avatar{
+    width:42px;height:42px;border-radius:50%;background:var(--blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;flex-shrink:0;
+  }
+  .testi-person b{display:block;font-size:14px;}
+  .testi-person span{font-size:12.5px;color:var(--ink-soft);}
+  .testi-note{margin-top:30px;font-size:12.5px;color:var(--ink-soft);text-align:center;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;}
+  .contact-info .item{display:flex;gap:16px;margin-bottom:26px;}
+  .contact-info .ic{
+    width:42px;height:42px;border-radius:10px;background:var(--blue-tint);color:var(--blue);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;
+  }
+  .contact-info h4{font-size:15px;margin-bottom:4px;}
+  .contact-info p{font-size:14.5px;color:var(--ink-soft);margin-bottom:0;}
+  .map-box{
+    margin-top:28px;border-radius:12px;overflow:hidden;border:1px solid var(--line);
+    height:190px;background:
+      linear-gradient(var(--blue-tint),var(--blue-tint)) ;
+    position:relative;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:13px;
+  }
+  .contact-form{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:34px;box-shadow:var(--shadow);
+  }
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:13px;font-weight:600;font-family:'Poppins',sans-serif;margin-bottom:6px;color:var(--navy);}
+  .field input, .field select, .field textarea{
+    width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:8px;font-family:'Inter',sans-serif;
+    font-size:14.5px;background:#fdfdfb;transition:border-color .15s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--gold);}
+  .form-msg{font-size:13.5px;margin-top:14px;display:none;padding:10px 14px;border-radius:8px;background:#e9f9ee;color:#166534;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy);color:#a9b1cf;padding:64px 0 26px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px;}
+  .foot-grid h4{color:#fff;font-size:14.5px;margin-bottom:16px;}
+  .foot-grid ul{list-style:none;padding:0;margin:0;}
+  .foot-grid li{margin-bottom:10px;}
+  .foot-grid a{color:#a9b1cf;text-decoration:none;font-size:14px;}
+  .foot-grid a:hover{color:var(--gold);}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;}
+  .foot-social{display:flex;gap:10px;}
+  .foot-social a{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;font-size:13px;}
+  .foot-social a:hover{background:var(--gold);color:var(--navy);}
+
+  /* ---------- WHATSAPP WIDGET ---------- */
+  .wa-widget{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    z-index:9998;
+    font-family:'Inter',sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+  }
+  .wa-panel{
+    display:none;
+    flex-direction:column;
+    width:290px;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:var(--shadow-lg);
+    overflow:hidden;
+    margin-bottom:14px;
+    border:1px solid var(--line);
+  }
+  .wa-panel.open{
+    display:flex;
+  }
+  .wa-panel-head{
+    background:var(--whatsapp);
+    color:#fff;
+    padding:16px 18px;
+  }
+  .wa-panel-head b{
+    display:block;
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+  }
+  .wa-panel-head span{
+    font-size:12px;
+    opacity:.9;
+  }
+  .wa-agent{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:13px 16px;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:1px solid var(--line);
+    transition:background .15s;
+  }
+  .wa-agent:last-child{border-bottom:none;}
+  .wa-agent:hover{background:#f4fbf6;}
+  .wa-agent .av{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:var(--blue-tint);
+    color:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:13px;
+    flex-shrink:0;
+  }
+  .wa-agent b{
+    display:block;
+    font-size:13.5px;
+  }
+  .wa-agent span{
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  .wa-fab{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--whatsapp);
+    border:none;
+    cursor:pointer;
+    box-shadow:0 10px 26px -8px rgba(37,211,102,.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:transform .18s ease;
+    flex-shrink:0;
+  }
+  .wa-fab:hover{
+    transform:scale(1.06);
+  }
+
+  @media (max-width:900px){
+    .cards-3, .about-grid, .support-grid, .apply-grid, .contact-grid, .steps, .country-grid, .job-cats, .vacancy-grid, .testi-grid, .foot-grid, .hero .wrap{
+      grid-template-columns:1fr !important;
+    }
+    section{padding:64px 0;}
+    .hero{padding:60px 0 46px;}
+    .form-row{grid-template-columns:1fr;}
+    .bridge-art{min-height:220px;order:-1;}
+    .wa-panel{
+      width:260px;
+      position:fixed;
+      bottom:90px;
+      right:10px;
+    }
+    .wa-fab{
+      width:56px;
+      height:56px;
+    }
+    .wa-widget{
+      bottom:16px;
+      right:16px;
+    }
+    .cards-3{
+      grid-template-columns:1fr !important;
+    }
+  }
+
+  /* Scroll reveal styles */
+  .card, .step, .country, .testi, .flow-step{
+    opacity:0;
+    transform:translateY(14px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .card.revealed, .step.revealed, .country.revealed, .testi.revealed, .flow-step.revealed{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* Prevent body scroll when mobile menu is open */
+  body.menu-open{
+    overflow:hidden;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-mark">KG</span>
+      <span class="logo-text">Kenya Gulf Connect<span>Agency Limited</span></span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#vacancies">Vacancies</a>
+      <a href="#support">50% Travel Support</a>
+      <a href="#apply">Apply</a>
+      <a href="#testimonials">Success Stories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#apply" class="btn btn-gold">Apply Now</a>
+      <a href="#contact" class="btn btn-whatsapp" onclick="toggleWA(event)">WhatsApp</a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menu" onclick="toggleMenu(event)">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Nairobi → Dubai · Riyadh · Doha · Muscat · Manama</p>
+      <h1>Your bridge to <em>Gulf career</em> opportunities.</h1>
+      <p class="lead">Kenya Gulf Connect Agency Limited helps qualified Kenyans find verified jobs across the Middle East — with document support, pre-departure orientation, and 50% travel cost assistance along the way.</p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn btn-gold">Download Application Form</a>
+        <a href="#contact" class="btn btn-outline" onclick="toggleWA(event)">Chat on WhatsApp</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>2,400+</b><span>Candidates Placed</span></div>
+        <div><b>6</b><span>Gulf Countries Served</span></div>
+        <div><b>50%</b><span>Travel Cost Support</span></div>
+      </div>
+    </div>
+    <div class="bridge-art" aria-hidden="true">
+      <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f0a500" stop-opacity=".18"/>
+            <stop offset="100%" stop-color="#f0a500" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="260" width="560" height="140" fill="url(#skyfade)"/>
+        <line x1="0" y1="300" x2="560" y2="300" stroke="#f0a500" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="#c7cde3" fill-opacity=".9">
+          <rect x="18" y="240" width="16" height="60"/>
+          <rect x="40" y="210" width="20" height="90"/>
+          <rect x="66" y="255" width="14" height="45"/>
+          <rect x="86" y="190" width="22" height="110"/>
+          <rect x="114" y="230" width="16" height="70"/>
+          <rect x="136" y="200" width="18" height="100"/>
+          <circle cx="150" cy="188" r="7" fill="none" stroke="#c7cde3" stroke-width="2"/>
+        </g>
+        <text x="20" y="322" fill="#8b93b8" font-family="Poppins,sans-serif" font-size="11" letter-spacing="1">NAIROBI</text>
+        <g fill="#e9edf7" fill-opacity=".95">
+          <rect x="380" y="235" width="14" height="65"/>
+          <rect x="400" y="195" width="18" height="105"/>
+          <polygon points="429,120 439,120 447,300 421,300"/>
+          <rect x="458" y="215" width="16" height="85"/>
+          <rect x="480" y="245" width="14" height="55"/>
+          <rect x="500" y="180" width="20" height="120"/>
+        </g>
+        <text x="415" y="322" fill="#8b93b8" font-family="Poppins,sans-serif" font-size="11" letter-spacing="1">THE GULF</text>
+        <path d="M110,260 C 220,120 340,120 450,240" fill="none" stroke="#f0a500" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round"/>
+        <g id="plane">
+          <circle cx="110" cy="260" r="4" fill="#f0a500"/>
+        </g>
+        <path d="M270,150 l10,-4 6,6 -8,3 z" fill="#f0a500"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap">
+    <span>✓ NEA-Licensed Recruitment Practice</span>
+    <span>✓ Contract Verification for Every Placement</span>
+    <span>✓ Pre-Departure Orientation Included</span>
+    <span>✓ Dedicated WhatsApp Support Team</span>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="art">
+        <p class="eyebrow" style="color:#ffce5c;">Who we are</p>
+        <h3>A Kenyan agency built on transparency.</h3>
+        <p>We were founded to close the gap between talented Kenyan job seekers and legitimate employers across the Gulf — with honest terms, verified contracts, and real people answering the phone.</p>
+        <div class="flag-row">
+          <div class="flag-chip">🇰🇪 Kenya</div>
+          <div class="flag-chip">🇦🇪 UAE</div>
+          <div class="flag-chip">🇸🇦 Saudi Arabia</div>
+          <div class="flag-chip">🇶🇦 Qatar</div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Why choose us</p>
+        <h2>Recruitment you can verify, every step of the way.</h2>
+        <p style="color:var(--ink-soft);font-size:16px;">From your first inquiry to your first paycheck abroad, our team walks with you — reviewing contracts, arranging travel, and staying reachable on WhatsApp throughout.</p>
+        <div class="cards-3" style="grid-template-columns:1fr 1fr;margin-top:30px;">
+          <div class="card" style="padding:22px 20px;">
+            <div class="icon">🤝</div>
+            <h3 style="font-size:15.5px;">Verified Employers</h3>
+            <p style="font-size:13.5px;">Every job offer is checked against the employer and contract before you travel.</p>
+          </div>
+          <div class="card" style="padding:22px 20px;">
+            <div class="icon">💰</div>
+            <h3 style="font-size:15.5px;">50% Travel Support</h3>
+            <p style="font-size:13.5px;">We cover half of your travel costs upfront, refundable from your salary over your first 6 months.</p>
+          </div>
+          <div class="card" style="padding:22px 20px;">
+            <div class="icon">📋</div>
+            <h3 style="font-size:15.5px;">Document Assistance</h3>
+            <p style="font-size:13.5px;">Help with passports, medical checks, and pre-departure paperwork.</p>
+          </div>
+          <div class="card" style="padding:22px 20px;">
+            <div class="icon">💬</div>
+            <h3 style="font-size:15.5px;">Always Reachable</h3>
+            <p style="font-size:13.5px;">A real team on WhatsApp and phone — before and after you land.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES / PROCESS ================= -->
+<section class="process-alt" id="services">
+  <div class="wrap">
+    <div class="section-head center" style="margin-left:auto;margin-right:auto;">
+      <p class="eyebrow" style="justify-content:center;">Our process</p>
+      <h2 style="color:#fff;">From application to arrival, in four stages.</h2>
+      <p>A clear, ordered process so you always know what happens next.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-connector"></div>
+        <div class="num">1</div>
+        <h4>Apply</h4>
+        <p>Download or submit the travel application form with your details and preferred role.</p>
+      </div>
+      <div class="step">
+        <div class="step-connector"></div>
+        <div class="num">2</div>
+        <h4>Screen & Match</h4>
+        <p>We review your profile, verify documents, and match you to a suitable employer.</p>
+      </div>
+      <div class="step">
+        <div class="step-connector"></div>
+        <div class="num">3</div>
+        <h4>Prepare & Travel</h4>
+        <p>Contract signing, medicals, pre-departure orientation, and 50% travel cost support.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <h4>Start Work</h4>
+        <p>Begin employment in the Gulf, with our team available for support after you land.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:70px;">
+      <p class="eyebrow" style="color:#ffce5c;justify-content:center;text-align:center;display:block;">Countries we serve — all 6 GCC states</p>
+      <div class="country-grid">
+        <div class="country"><div class="flag">🇦🇪</div><h4>UAE</h4></div>
+        <div class="country"><div class="flag">🇸🇦</div><h4>Saudi Arabia</h4></div>
+        <div class="country"><div class="flag">🇶🇦</div><h4>Qatar</h4></div>
+        <div class="country"><div class="flag">🇴🇲</div><h4>Oman</h4></div>
+        <div class="country"><div class="flag">🇧🇭</div><h4>Bahrain</h4></div>
+        <div class="country"><div class="flag">🇰🇼</div><h4>Kuwait</h4></div>
+      </div>
+      <p class="eyebrow" style="color:#ffce5c;justify-content:center;text-align:center;display:block;margin-top:40px;">Job categories</p>
+      <div class="job-cats">
+        <div class="job-cat">🏠 Domestic & Home Care</div>
+        <div class="job-cat">🏨 Hospitality & Tourism</div>
+        <div class="job-cat">🏗️ Construction & Trades</div>
+        <div class="job-cat">🩺 Healthcare Support</div>
+        <div class="job-cat">🛡️ Security Services</div>
+        <div class="job-cat">🚚 Driving & Logistics</div>
+        <div class="job-cat">🛍️ Retail & Sales</div>
+        <div class="job-cat">🏭 Manufacturing & Production</div>
+        <div class="job-cat">🗂️ Administrative & Office Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VACANCIES ================= -->
+<section id="vacancies">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow" style="justify-content:center;">Now hiring</p>
+      <h2>Current vacancies across the Gulf.</h2>
+      <p>A snapshot of live-style openings by role, country, and category. Sample postings — replace with your real, current vacancy feed before publishing.</p>
+    </div>
+    <div class="vacancy-grid">
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇦🇪 UAE</span><span class="vbadge">25 openings</span></div>
+        <h4>Housekeeper / Domestic Worker</h4>
+        <span class="vcat">Domestic & Home Care</span>
+        <p>Live-in placements with vetted households; accommodation and meals included.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">15 openings</span></div>
+        <h4>Waiter / Waitress</h4>
+        <span class="vcat">Hospitality & Tourism</span>
+        <p>Restaurant and hotel F&B roles in Doha, 2-year renewable contracts.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇸🇦 Saudi Arabia</span><span class="vbadge">40 openings</span></div>
+        <h4>Construction Laborer</h4>
+        <span class="vcat">Construction & Trades</span>
+        <p>General labor on residential and infrastructure sites, Riyadh and Jeddah.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">10 openings</span></div>
+        <h4>Certified Nursing Assistant</h4>
+        <span class="vcat">Healthcare Support</span>
+        <p>Private hospital placements; nursing qualification and license required.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇧🇭 Bahrain</span><span class="vbadge">12 openings</span></div>
+        <h4>Security Guard</h4>
+        <span class="vcat">Security Services</span>
+        <p>Commercial and residential sites in Manama; training provided on arrival.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇴🇲 Oman</span><span class="vbadge">8 openings</span></div>
+        <h4>Truck Driver (Heavy License)</h4>
+        <span class="vcat">Driving & Logistics</span>
+        <p>Freight and logistics roles; valid heavy commercial license required.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇦🇪 UAE</span><span class="vbadge">20 openings</span></div>
+        <h4>Hotel Housekeeping Attendant</h4>
+        <span class="vcat">Hospitality & Tourism</span>
+        <p>4- and 5-star hotel groups across Dubai and Abu Dhabi.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇰🇼 Kuwait</span><span class="vbadge">18 openings</span></div>
+        <h4>Warehouse Assistant</h4>
+        <span class="vcat">Driving & Logistics</span>
+        <p>Stock handling and dispatch for a Kuwait City distribution center.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">6 openings</span></div>
+        <h4>Electrician (Skilled)</h4>
+        <span class="vcat">Construction & Trades</span>
+        <p>Commercial site wiring and maintenance; trade certificate required.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇦🇪 UAE</span><span class="vbadge">14 openings</span></div>
+        <h4>Retail Sales Associate</h4>
+        <span class="vcat">Retail & Sales</span>
+        <p>Mall-based retail chains across Dubai; basic English required.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇧🇭 Bahrain</span><span class="vbadge">5 openings</span></div>
+        <h4>Office Administrator</h4>
+        <span class="vcat">Administrative & Office Support</span>
+        <p>Front-office and records support for a Manama trading company.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+      <div class="vacancy-card">
+        <div class="vtop"><span class="vflag">🇰🇼 Kuwait</span><span class="vbadge">22 openings</span></div>
+        <h4>Production Line Operator</h4>
+        <span class="vcat">Manufacturing & Production</span>
+        <p>Food-processing plant roles near Kuwait City; on-site training given.</p>
+        <a href="#apply" class="vapply">Apply for this role →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 50% SUPPORT ================= -->
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our promise</p>
+      <h2>We cover half your travel costs — refunded gradually once you're earning.</h2>
+      <p>A simple, three-step commitment designed to make the move affordable.</p>
+    </div>
+    <div class="support-grid">
+      <div class="support-flow">
+        <div class="flow-step">
+          <div class="flow-dot">1</div>
+          <div><h4>Agency pays 50% of travel costs</h4><p>We advance half of your flight, visa, and processing costs once your placement is confirmed.</p></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-dot">2</div>
+          <div><h4>You start employment in the Gulf</h4><p>You travel, begin work under your verified contract, and start earning your salary.</p></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-dot">3</div>
+          <div><h4>Amount refunded within 6 months</h4><p>The advanced amount is repaid in agreed instalments from your salary during your first six months of work.</p></div>
+        </div>
+      </div>
+      <div class="support-card">
+        <p class="eyebrow" style="margin-bottom:4px;">Travel cost coverage</p>
+        <div class="big-stat">50<span>%</span></div>
+        <p style="color:var(--ink-soft);font-size:14.5px;margin-top:8px;">of your travel costs advanced by the agency before departure.</p>
+        <ul>
+          <li>No lump-sum payment required upfront</li>
+          <li>Refund schedule agreed in writing before you travel</li>
+          <li>Full terms set out in our Refund Policy document</li>
+          <li>Questions answered by our team before you sign anything</li>
+        </ul>
+        <a href="#contact" class="btn btn-navy" style="width:100%;" onclick="toggleWA(event)">Ask About the Refund Terms</a>
+        <p class="fine-print">This section is a summary. The complete Refund Policy — including instalment amounts, timelines, and what happens if employment ends early — is provided in writing and reviewed with you before you sign your application.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLY / FORMS ================= -->
+<section class="apply-alt" id="apply">
+  <div class="wrap">
+    <div class="apply-grid">
+      <div>
+        <p class="eyebrow" style="color:#ffce5c;">Get started</p>
+        <h2 style="color:#fff;">Download your travel application form.</h2>
+        <p style="color:#a9b1cf;font-size:16px;margin-bottom:34px;">Fill it out at home or bring it to our office — either way, here's what happens once we receive it.</p>
+        <ol class="apply-steps">
+          <li><b>Download & complete the form</b>Print, fill by hand, or complete on your device.</li>
+          <li><b>Submit to our team</b>Drop it off, email it, or send a photo of it via WhatsApp.</li>
+          <li><b>We review within 3–5 working days</b>A consultant will call or WhatsApp you to confirm next steps.</li>
+        </ol>
+      </div>
+      <div class="form-card">
+        <div class="icon-row">
+          <div class="pdf-icon">PDF</div>
+          <div>
+            <h3>Travel Application Form</h3>
+            <span class="meta">2 pages · Fillable by hand · Free to download</span>
+          </div>
+        </div>
+        <p style="font-size:14px;color:var(--ink-soft);">Includes personal details, contact information, employment preferences, and travel information.</p>
+        <ul class="checklist">
+          <li>National ID or valid passport</li>
+          <li>2 recent passport photos</li>
+          <li>Certificate of Good Conduct</li>
+          <li>Relevant certificates or references</li>
+        </ul>
+        <a href="application-form.pdf" download class="btn btn-gold" style="width:100%;">
+          ⬇ Download Application Form (PDF)
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow" style="justify-content:center;">Success stories</p>
+      <h2>Placed candidates, in their own words.</h2>
+      <p>Sample stories — replace with real, permissioned client testimonials before publishing.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"The team explained every step before I signed anything, and the travel support meant I didn't need to borrow money to leave."</p>
+        <div class="testi-person">
+          <div class="avatar">AW</div>
+          <div><b>A. Wanjiru</b><span>Placed in Dubai · Hospitality</span></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I could reach my consultant on WhatsApp any time I had a question, even after I'd already landed in Doha."</p>
+        <div class="testi-person">
+          <div class="avatar">JM</div>
+          <div><b>J. Mwangi</b><span>Placed in Doha · Logistics</span></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"The refund schedule was clear from day one, so there were no surprises once I started earning."</p>
+        <div class="testi-person">
+          <div class="avatar">FN</div>
+          <div><b>F. Njeri</b><span>Placed in Riyadh · Healthcare Support</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="testi-note">Names abbreviated for privacy. Full, verified testimonials available on request.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="background:var(--blue-tint);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Talk to a consultant today.</h2>
+      <p>Reach us by phone, email, WhatsApp, or in person — whatever's easiest for you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="item">
+          <div class="ic">📍</div>
+          <div><h4>Office Address</h4><p>Diamond Plaza Annexe, Highridge<br>Nairobi, Kenya<br><em style="color:var(--gold-deep);font-style:normal;"></em></p></div>
+        </div>
+        <div class="item">
+          <div class="ic">✉️</div>
+          <div><h4>Email</h4><p>info@kenyagulfconnect.co.ke</p></div>
+        </div>
+        <div class="item">
+          <div class="ic">📞</div>
+          <div><h4>Phone</h4><p>+254 748 220 487 &nbsp;/&nbsp; +254 798 500 951</p></div>
+        </div>
+        <div class="item">
+          <div class="ic">🕒</div>
+          <div><h4>Working Hours</h4><p>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 9:00 AM – 1:00 PM</p></div>
+        </div>
+        <div class="item">
+          <div class="ic">💬</div>
+          <div><h4>WhatsApp</h4><p>Tap the green button (bottom-right) to message a department directly.</p></div>
+        </div>
+        <div class="map-box">📍 the lattitude is -1.258174, and the longitude is 36.818733.</div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label>Full Name</label><input type="text" required placeholder="Jane Wanjiku"></div>
+          <div class="field"><label>Phone Number</label><input type="tel" required placeholder="07XX XXX XXX"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+          <div class="field"><label>Preferred Country</label>
+            <select>
+              <option>UAE</option><option>Saudi Arabia</option><option>Qatar</option><option>Oman</option><option>Bahrain</option><option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Message</label><textarea rows="4" placeholder="Tell us about the role you're interested in..."></textarea></div>
+        <button type="submit" class="btn btn-navy" style="width:100%;">Send Inquiry</button>
+        <div class="form-msg" id="formMsg">Thanks — your inquiry has been prepared. Please send it from your mail app to complete submission.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo" style="margin-bottom:14px;">
+          <span class="logo-mark">KG</span>
+          <span class="logo-text" style="color:#fff;">Kenya Gulf Connect<span>Agency Limited</span></span>
+        </a>
+        <p style="font-size:13.5px;max-width:260px;">Connecting Kenyan talent with verified employment opportunities across the Gulf.</p>
+        <div class="foot-social" style="margin-top:16px;">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#vacancies">Vacancies</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="#apply">Download Application</a></li>
+          <li><a href="#support">50% Travel Support</a></li>
+          <li><a href="#" onclick="toggleWA(event)">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@kenyagulfconnect.co.ke">info@kenyagulfconnect.co.ke</a></li>
+          <li><a href="tel:+254748220487">+254 748 220 487</a></li>
+          <li><a href="#contact">Office Location</a> Diamond Plaza Annexe, Highridge, Nairobi, Kenya</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Kenya Gulf Connect Agency Limited. All rights reserved.</span>
+      <span>Licenced by National Employment Authority (NEA) and monitored by the Ministry of Labor and Foreign Affairs.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP WIDGET ================= -->
+<div class="wa-widget">
+  <div class="wa-panel" id="waPanel">
+    <div class="wa-panel-head">
+      <b>Chat with our team</b>
+      <span>Typically replies within minutes</span>
+    </div>
+    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%27d%20like%20information%20about%20applying%20for%20a%20job%20in%20the%20Gulf." target="_blank" rel="noopener">
+      <div class="av">GA</div>
+      <div><b>General Inquiries</b><span>Applications & eligibility</span></div>
+    </a>
+    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%20have%20a%20question%20about%20the%2050%25%20travel%20cost%20support." target="_blank" rel="noopener">
+      <div class="av">TS</div>
+      <div><b>Travel Support Desk</b><span>50% travel cost & refund terms</span></div>
+    </a>
+    <a class="wa-agent" href="https://wa.me/254748220487?text=Hi%2C%20I%20need%20help%20with%20my%20documents%20and%20travel%20preparation." target="_blank" rel="noopener">
+      <div class="av">DP</div>
+      <div><b>Documents & Departure</b><span>Passports, visas, orientation</span></div>
+    </a>
+  </div>
+  <button class="wa-fab" id="waFab" aria-label="Open WhatsApp chat" onclick="toggleWA(event)">
+    <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.7 5 1.9 7.1L3 29l6.4-2.1c2 .1 3.9-1 3.9-1 .9.2 1.8.3 2.7.3 7 0 12.7-5.7 12.7-12.7S23 3 16 3z" fill="white"/><path d="M22.4 19.1c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z" fill="#25D366"/></svg>
+  </button>
+</div>
+
+<script>
+  // Mobile navigation toggle
+  function toggleMenu(e) {
+    if(e) e.preventDefault();
+    const burger = document.getElementById('burgerBtn');
+    const nav = document.getElementById('navLinks');
+    const body = document.body;
+    
+    nav.classList.toggle('open');
+    burger.classList.toggle('active');
+    body.classList.toggle('menu-open');
+  }
+
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const nav = document.getElementById('navLinks');
+      const burger = document.getElementById('burgerBtn');
+      const body = document.body;
+      
+      if(nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        burger.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('navLinks');
+    const burger = document.getElementById('burgerBtn');
+    const body = document.body;
+    const isClickInsideNav = nav.contains(e.target);
+    const isClickOnBurger = burger.contains(e.target);
+    
+    if(nav.classList.contains('open') && !isClickInsideNav && !isClickOnBurger) {
+      nav.classList.remove('open');
+      burger.classList.remove('active');
+      body.classList.remove('menu-open');
+    }
+  });
+
+  // WhatsApp widget toggle
+  function toggleWA(e){
+    if(e) e.preventDefault();
+    const panel = document.getElementById('waPanel');
+    panel.classList.toggle('open');
+  }
+
+  // Contact form -> mailto fallback
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const inputs = form.querySelectorAll('input, select, textarea');
+    let body = '';
+    inputs.forEach(i => { 
+      if(i.previousElementSibling && i.previousElementSibling.tagName === 'LABEL'){ 
+        body += i.previousElementSibling.innerText + ': ' + i.value + '%0D%0A'; 
+      }
+    });
+    window.location.href = 'mailto:info@kenyagulfconnect.co.ke?subject=Website Inquiry&body=' + body;
+    document.getElementById('formMsg').style.display = 'block';
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.card, .step, .country, .testi, .flow-step');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting){ 
+          en.target.classList.add('revealed');
+          io.unobserve(en.target); 
+        }
+      });
+    },{threshold:.15});
+    revealEls.forEach(el=>{
+      io.observe(el);
+    });
+  }
+</script>
+
+</body>
+</html>
