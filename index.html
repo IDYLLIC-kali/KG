@@ -24,6 +24,7 @@
     --shadow: 0 12px 30px -14px rgba(13,27,62,0.28);
     --shadow-lg: 0 24px 60px -20px rgba(13,27,62,0.35);
     --wrap: 1160px;
+    --success:#22c55e;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -72,6 +73,10 @@
   .btn-whatsapp:hover{background:var(--whatsapp-dark);}
   .btn-navy{background:var(--blue);color:#fff;}
   .btn-navy:hover{background:var(--navy);}
+  .btn-success{background:var(--success);color:#fff;}
+  .btn-success:hover{background:#16a34a;}
+  .btn-outline-navy{background:transparent;border-color:var(--navy);color:var(--navy);}
+  .btn-outline-navy:hover{background:var(--navy);color:#fff;}
   section{padding:96px 0;}
   .section-head{max-width:640px;margin-bottom:56px;}
   .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
@@ -408,6 +413,208 @@
   }
   .apply-steps li b{display:block;color:#fff;font-family:'Poppins',sans-serif;font-size:15.5px;margin-bottom:3px;}
 
+  /* ---------- ONLINE APPLICATION FORM ---------- */
+  .online-form-section{
+    background:var(--blue-tint);
+    padding:96px 0;
+  }
+  .online-form-wrapper{
+    max-width:900px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:16px;
+    padding:50px 60px;
+    box-shadow:var(--shadow-lg);
+  }
+  .online-form-wrapper .form-header{
+    text-align:center;
+    margin-bottom:40px;
+  }
+  .online-form-wrapper .form-header h2{
+    font-size:28px;
+    margin-bottom:6px;
+  }
+  .online-form-wrapper .form-header p{
+    color:var(--ink-soft);
+    font-size:15px;
+  }
+  .online-form-wrapper .form-divider{
+    height:2px;
+    background:var(--line);
+    margin:30px 0;
+  }
+  .online-form-wrapper .form-section-title{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    font-size:18px;
+    color:var(--navy);
+    margin-bottom:20px;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--gold);
+  }
+  .online-form-wrapper .form-row-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  .online-form-wrapper .form-group{
+    margin-bottom:18px;
+  }
+  .online-form-wrapper .form-group label{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    font-family:'Poppins',sans-serif;
+    margin-bottom:5px;
+    color:var(--navy);
+  }
+  .online-form-wrapper .form-group label .required{
+    color:#ef4444;
+  }
+  .online-form-wrapper .form-group input,
+  .online-form-wrapper .form-group select,
+  .online-form-wrapper .form-group textarea{
+    width:100%;
+    padding:11px 14px;
+    border:1.5px solid var(--line);
+    border-radius:8px;
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    background:#fafaf8;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  .online-form-wrapper .form-group input:focus,
+  .online-form-wrapper .form-group select:focus,
+  .online-form-wrapper .form-group textarea:focus{
+    outline:none;
+    border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(240,165,0,.15);
+  }
+  .online-form-wrapper .form-group input.error,
+  .online-form-wrapper .form-group select.error,
+  .online-form-wrapper .form-group textarea.error{
+    border-color:#ef4444;
+  }
+  .online-form-wrapper .form-group .error-msg{
+    color:#ef4444;
+    font-size:12px;
+    margin-top:4px;
+    display:none;
+  }
+  .online-form-wrapper .form-group .error-msg.show{
+    display:block;
+  }
+  .online-form-wrapper .checkbox-group{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .online-form-wrapper .checkbox-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:400;
+    font-size:14px;
+    cursor:pointer;
+  }
+  .online-form-wrapper .checkbox-group input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    accent-color:var(--gold);
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .online-form-wrapper .radio-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+  }
+  .online-form-wrapper .radio-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:400;
+    font-size:14px;
+    cursor:pointer;
+  }
+  .online-form-wrapper .radio-group input[type="radio"]{
+    width:18px;
+    height:18px;
+    accent-color:var(--gold);
+    cursor:pointer;
+  }
+  .online-form-wrapper .declaration-box{
+    background:var(--blue-tint);
+    border-radius:8px;
+    padding:20px 24px;
+    margin:20px 0;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.8;
+  }
+  .online-form-wrapper .declaration-box strong{
+    color:var(--navy);
+  }
+  .online-form-wrapper .signature-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  .online-form-wrapper .form-actions{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:30px;
+  }
+  .online-form-wrapper .form-actions .btn{
+    flex:1;
+    min-width:200px;
+  }
+  .online-form-success{
+    display:none;
+    text-align:center;
+    padding:40px 20px;
+  }
+  .online-form-success .success-icon{
+    font-size:64px;
+    margin-bottom:16px;
+  }
+  .online-form-success h3{
+    color:var(--success);
+    font-size:24px;
+  }
+  .online-form-success p{
+    color:var(--ink-soft);
+    font-size:16px;
+    max-width:500px;
+    margin:10px auto 0;
+  }
+
+  @media (max-width:768px){
+    .online-form-wrapper{
+      padding:30px 20px;
+    }
+    .online-form-wrapper .form-row-2{
+      grid-template-columns:1fr;
+    }
+    .online-form-wrapper .checkbox-group{
+      grid-template-columns:1fr;
+    }
+    .online-form-wrapper .signature-row{
+      grid-template-columns:1fr;
+    }
+    .online-form-wrapper .radio-group{
+      flex-direction:column;
+      gap:10px;
+    }
+    .online-form-wrapper .form-actions{
+      flex-direction:column;
+    }
+    .online-form-wrapper .form-actions .btn{
+      min-width:auto;
+    }
+  }
+
   /* ---------- TESTIMONIALS ---------- */
   .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
   .testi{
@@ -513,6 +720,9 @@
     .cards-3{
       grid-template-columns:1fr !important;
     }
+    .online-form-section{
+      padding:64px 0;
+    }
   }
 
   /* Scroll reveal styles */
@@ -569,7 +779,7 @@
       <h1>Your bridge to <em>Gulf career</em> opportunities.</h1>
       <p class="lead">Kenya Gulf Connect Agency Limited helps qualified Kenyans find verified jobs across the Middle East — with document support, pre-departure orientation, and 50% travel cost assistance along the way.</p>
       <div class="hero-actions">
-        <a href="#apply" class="btn btn-gold">Download Application Form</a>
+        <a href="#online-application" class="btn btn-gold">Apply Online Now</a>
         <a href="https://wa.me/254748220487" target="_blank" rel="noopener" class="btn btn-outline">Chat on WhatsApp</a>
       </div>
       <div class="hero-stats">
@@ -746,84 +956,84 @@
         <h4>Housekeeper / Domestic Worker</h4>
         <span class="vcat">Domestic & Home Care</span>
         <p>Live-in placements with vetted households; accommodation and meals included.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">15 openings</span></div>
         <h4>Waiter / Waitress</h4>
         <span class="vcat">Hospitality & Tourism</span>
         <p>Restaurant and hotel F&B roles in Doha, 2-year renewable contracts.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇸🇦 Saudi Arabia</span><span class="vbadge">40 openings</span></div>
         <h4>Construction Laborer</h4>
         <span class="vcat">Construction & Trades</span>
         <p>General labor on residential and infrastructure sites, Riyadh and Jeddah.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">10 openings</span></div>
         <h4>Certified Nursing Assistant</h4>
         <span class="vcat">Healthcare Support</span>
         <p>Private hospital placements; nursing qualification and license required.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇧🇭 Bahrain</span><span class="vbadge">12 openings</span></div>
         <h4>Security Guard</h4>
         <span class="vcat">Security Services</span>
         <p>Commercial and residential sites in Manama; training provided on arrival.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇴🇲 Oman</span><span class="vbadge">8 openings</span></div>
         <h4>Truck Driver (Heavy License)</h4>
         <span class="vcat">Driving & Logistics</span>
         <p>Freight and logistics roles; valid heavy commercial license required.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇦🇪 UAE</span><span class="vbadge">20 openings</span></div>
         <h4>Hotel Housekeeping Attendant</h4>
         <span class="vcat">Hospitality & Tourism</span>
         <p>4- and 5-star hotel groups across Dubai and Abu Dhabi.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇰🇼 Kuwait</span><span class="vbadge">18 openings</span></div>
         <h4>Warehouse Assistant</h4>
         <span class="vcat">Driving & Logistics</span>
         <p>Stock handling and dispatch for a Kuwait City distribution center.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇶🇦 Qatar</span><span class="vbadge">6 openings</span></div>
         <h4>Electrician (Skilled)</h4>
         <span class="vcat">Construction & Trades</span>
         <p>Commercial site wiring and maintenance; trade certificate required.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇦🇪 UAE</span><span class="vbadge">14 openings</span></div>
         <h4>Retail Sales Associate</h4>
         <span class="vcat">Retail & Sales</span>
         <p>Mall-based retail chains across Dubai; basic English required.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇧🇭 Bahrain</span><span class="vbadge">5 openings</span></div>
         <h4>Office Administrator</h4>
         <span class="vcat">Administrative & Office Support</span>
         <p>Front-office and records support for a Manama trading company.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
       <div class="vacancy-card">
         <div class="vtop"><span class="vflag">🇰🇼 Kuwait</span><span class="vbadge">22 openings</span></div>
         <h4>Production Line Operator</h4>
         <span class="vcat">Manufacturing & Production</span>
         <p>Food-processing plant roles near Kuwait City; on-site training given.</p>
-        <a href="#apply" class="vapply">Apply for this role →</a>
+        <a href="#online-application" class="vapply">Apply for this role →</a>
       </div>
     </div>
   </div>
@@ -869,39 +1079,211 @@
   </div>
 </section>
 
-<!-- ================= APPLY / FORMS ================= -->
-<section class="apply-alt" id="apply">
+<!-- ================= ONLINE APPLICATION FORM ================= -->
+<section class="online-form-section" id="online-application">
   <div class="wrap">
-    <div class="apply-grid">
-      <div>
-        <p class="eyebrow" style="color:#ffce5c;">Get started</p>
-        <h2 style="color:#fff;">Download your travel application form.</h2>
-        <p style="color:#a9b1cf;font-size:16px;margin-bottom:34px;">Fill it out at home or bring it to our office — either way, here's what happens once we receive it.</p>
-        <ol class="apply-steps">
-          <li><b>Download & complete the form</b>Print, fill by hand, or complete on your device.</li>
-          <li><b>Submit to our team</b>Drop it off, email it, or send a photo of it via WhatsApp.</li>
-          <li><b>We review within 3–5 working days</b>A consultant will call or WhatsApp you to confirm next steps.</li>
-        </ol>
+    <div class="online-form-wrapper">
+      <div class="form-header">
+        <p class="eyebrow" style="justify-content:center;">Apply Now</p>
+        <h2>Travel Application Form</h2>
+        <p>Fill in your details online and submit, or download the PDF to fill manually.</p>
       </div>
-      <div class="form-card">
-        <div class="icon-row">
-          <div class="pdf-icon">PDF</div>
-          <div>
-            <h3>Travel Application Form</h3>
-            <span class="meta">2 pages · Fillable by hand · Free to download</span>
+
+      <!-- Online Form -->
+      <form id="onlineApplicationForm" novalidate>
+        <!-- Section 1: Personal Information -->
+        <div class="form-section-title">1. Personal Information</div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Full Name (as on passport) <span class="required">*</span></label>
+            <input type="text" id="fullName" required placeholder="e.g., John Mwangi Kamau">
+            <div class="error-msg" id="fullNameError">Please enter your full name</div>
+          </div>
+          <div class="form-group">
+            <label>Date of Birth <span class="required">*</span></label>
+            <input type="date" id="dob" required>
+            <div class="error-msg" id="dobError">Please enter your date of birth</div>
           </div>
         </div>
-        <p style="font-size:14px;color:var(--ink-soft);">Includes personal details, contact information, employment preferences, and travel information.</p>
-        <ul class="checklist">
-          <li>National ID or valid passport</li>
-          <li>2 recent passport photos</li>
-          <li>Certificate of Good Conduct</li>
-          <li>Relevant certificates or references</li>
-        </ul>
-        <a href="application-form.pdf" download class="btn btn-gold" style="width:100%;">
-          ⬇ Download Application Form (PDF)
-        </a>
-      </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>National ID Number <span class="required">*</span></label>
+            <input type="text" id="nationalId" required placeholder="e.g., 12345678">
+            <div class="error-msg" id="nationalIdError">Please enter your National ID number</div>
+          </div>
+          <div class="form-group">
+            <label>Passport Expiry Date <span class="required">*</span></label>
+            <input type="date" id="passportExpiry" required>
+            <div class="error-msg" id="passportExpiryError">Please enter your passport expiry date</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Gender <span class="required">*</span></label>
+          <select id="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="error-msg" id="genderError">Please select your gender</div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Section 2: Contact Details -->
+        <div class="form-section-title">2. Contact Details</div>
+        <div class="form-group">
+          <label>Phone Number (WhatsApp preferred) <span class="required">*</span></label>
+          <input type="tel" id="phone" required placeholder="e.g., 0712345678">
+          <div class="error-msg" id="phoneError">Please enter a valid phone number</div>
+        </div>
+        <div class="form-group">
+          <label>Physical / Postal Address</label>
+          <input type="text" id="address" placeholder="e.g., P.O. Box 12345, Nairobi">
+        </div>
+        <div class="form-group">
+          <label>County / Town <span class="required">*</span></label>
+          <input type="text" id="county" required placeholder="e.g., Nairobi, Kiambu">
+          <div class="error-msg" id="countyError">Please enter your county or town</div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Section 3: Employment Preferences -->
+        <div class="form-section-title">3. Employment Preferences</div>
+        <div class="form-group">
+          <label>Preferred Country <span class="required">*</span></label>
+          <select id="preferredCountry" required>
+            <option value="">Select a country</option>
+            <option value="uae">🇦🇪 UAE</option>
+            <option value="saudi">🇸🇦 Saudi Arabia</option>
+            <option value="qatar">🇶🇦 Qatar</option>
+            <option value="oman">🇴🇲 Oman</option>
+            <option value="bahrain">🇧🇭 Bahrain</option>
+            <option value="kuwait">🇰🇼 Kuwait</option>
+          </select>
+          <div class="error-msg" id="preferredCountryError">Please select a preferred country</div>
+        </div>
+        <div class="form-group">
+          <label>Preferred Job Category <span class="required">*</span></label>
+          <select id="jobCategory" required>
+            <option value="">Select a job category</option>
+            <option value="domestic">🏠 Domestic & Home Care</option>
+            <option value="hospitality">🏨 Hospitality & Tourism</option>
+            <option value="construction">🏗️ Construction & Trades</option>
+            <option value="healthcare">🩺 Healthcare Support</option>
+            <option value="security">🛡️ Security Services</option>
+            <option value="driving">🚚 Driving & Logistics</option>
+            <option value="retail">🛍️ Retail & Sales</option>
+            <option value="manufacturing">🏭 Manufacturing & Production</option>
+            <option value="administrative">🗂️ Administrative & Office Support</option>
+          </select>
+          <div class="error-msg" id="jobCategoryError">Please select a job category</div>
+        </div>
+        <div class="form-group">
+          <label>Skills / Qualifications / Certifications</label>
+          <textarea id="skills" rows="2" placeholder="List your skills, qualifications, and any certifications"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Years of Relevant Experience <span class="required">*</span></label>
+          <select id="experience" required>
+            <option value="">Select years of experience</option>
+            <option value="0">0 - 1 year</option>
+            <option value="1">1 - 2 years</option>
+            <option value="2">2 - 3 years</option>
+            <option value="3">3 - 5 years</option>
+            <option value="5">5 - 10 years</option>
+            <option value="10">10+ years</option>
+          </select>
+          <div class="error-msg" id="experienceError">Please select your years of experience</div>
+        </div>
+        <div class="form-group">
+          <label>Have you worked abroad before?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="workedAbroad" value="yes"> Yes</label>
+            <label><input type="radio" name="workedAbroad" value="no" checked> No</label>
+          </div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Section 4: Travel Information -->
+        <div class="form-section-title">4. Travel Information</div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label>Preferred Travel Date (approximate)</label>
+            <input type="date" id="travelDate">
+          </div>
+          <div class="form-group">
+            <label>Passport Validity (months remaining) <span class="required">*</span></label>
+            <select id="passportValidity" required>
+              <option value="">Select months remaining</option>
+              <option value="6">6+ months</option>
+              <option value="12">12+ months</option>
+              <option value="18">18+ months</option>
+              <option value="24">24+ months</option>
+              <option value="30">30+ months</option>
+              <option value="36">36+ months</option>
+            </select>
+            <div class="error-msg" id="passportValidityError">Please select your passport validity</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Do you require the 50% travel cost support? <span class="required">*</span></label>
+          <div class="radio-group">
+            <label><input type="radio" name="travelSupport" value="yes" required> Yes, I would like to apply for it</label>
+            <label><input type="radio" name="travelSupport" value="no"> No, I will cover travel costs myself</label>
+          </div>
+          <div class="error-msg" id="travelSupportError">Please select your travel support preference</div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Section 5: Documents Checklist -->
+        <div class="form-section-title">5. Documents Checklist</div>
+        <p style="font-size:14px;color:var(--ink-soft);margin-bottom:12px;">Tick what you have ready:</p>
+        <div class="checkbox-group">
+          <label><input type="checkbox" class="doc-check" value="id"> National ID or valid Passport</label>
+          <label><input type="checkbox" class="doc-check" value="photos"> 2 recent passport-size photos</label>
+          <label><input type="checkbox" class="doc-check" value="conduct"> Certificate of Good Conduct</label>
+          <label><input type="checkbox" class="doc-check" value="certificates"> Academic / professional certificates</label>
+          <label><input type="checkbox" class="doc-check" value="medical"> Medical certificate (if available)</label>
+          <label><input type="checkbox" class="doc-check" value="reference"> Reference letter from previous employer (if any)</label>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- Section 6: Declaration -->
+        <div class="form-section-title">6. Declaration</div>
+        <div class="declaration-box">
+          <p>I confirm that the information provided in this form is true and accurate to the best of my knowledge. I understand that Kenya Gulf Connect Agency Limited will review my application and contact me regarding next steps. I understand that full terms of any travel cost support, including repayment terms, will be provided to me in writing before I sign an employment contract.</p>
+        </div>
+        <div class="signature-row">
+          <div class="form-group">
+            <label>Full Name (Signature) <span class="required">*</span></label>
+            <input type="text" id="signature" required placeholder="Type your full name as signature">
+            <div class="error-msg" id="signatureError">Please type your signature name</div>
+          </div>
+          <div class="form-group">
+            <label>Date <span class="required">*</span></label>
+            <input type="date" id="signatureDate" required>
+            <div class="error-msg" id="signatureDateError">Please select the date</div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-success">✅ Submit Application Online</button>
+          <a href="application-form.pdf" download class="btn btn-outline-navy">⬇ Download PDF Form</a>
+        </div>
+
+        <!-- Success Message -->
+        <div class="online-form-success" id="formSuccess">
+          <div class="success-icon">✅</div>
+          <h3>Application Submitted Successfully!</h3>
+          <p>Thank you for applying with Kenya Gulf Connect Agency Limited. Our team will review your application and contact you within 3-5 working days.</p>
+          <p style="margin-top:12px;font-size:13px;">📞 +254 748 220 487 &nbsp;|&nbsp; 💬 WhatsApp: +254 748 220 487</p>
+        </div>
+      </form>
     </div>
   </div>
 </section>
@@ -1026,7 +1408,8 @@
       <div>
         <h4>Get Started</h4>
         <ul>
-          <li><a href="#apply">Download Application</a></li>
+          <li><a href="#online-application">Apply Online</a></li>
+          <li><a href="application-form.pdf" download>Download PDF Form</a></li>
           <li><a href="#support">50% Travel Support</a></li>
           <li><a href="https://wa.me/254748220487" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
         </ul>
@@ -1097,11 +1480,171 @@
     }
   });
 
-  // Contact form -> mailto fallback
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', function(e){
+  // =============================================
+  // ONLINE APPLICATION FORM HANDLING
+  // =============================================
+  const form = document.getElementById('onlineApplicationForm');
+  const formSuccess = document.getElementById('formSuccess');
+
+  // Get form elements for validation
+  const fields = {
+    fullName: { el: document.getElementById('fullName'), error: document.getElementById('fullNameError') },
+    dob: { el: document.getElementById('dob'), error: document.getElementById('dobError') },
+    nationalId: { el: document.getElementById('nationalId'), error: document.getElementById('nationalIdError') },
+    passportExpiry: { el: document.getElementById('passportExpiry'), error: document.getElementById('passportExpiryError') },
+    gender: { el: document.getElementById('gender'), error: document.getElementById('genderError') },
+    phone: { el: document.getElementById('phone'), error: document.getElementById('phoneError') },
+    county: { el: document.getElementById('county'), error: document.getElementById('countyError') },
+    preferredCountry: { el: document.getElementById('preferredCountry'), error: document.getElementById('preferredCountryError') },
+    jobCategory: { el: document.getElementById('jobCategory'), error: document.getElementById('jobCategoryError') },
+    experience: { el: document.getElementById('experience'), error: document.getElementById('experienceError') },
+    passportValidity: { el: document.getElementById('passportValidity'), error: document.getElementById('passportValidityError') },
+    signature: { el: document.getElementById('signature'), error: document.getElementById('signatureError') },
+    signatureDate: { el: document.getElementById('signatureDate'), error: document.getElementById('signatureDateError') }
+  };
+
+  // Validate single field
+  function validateField(fieldKey) {
+    const field = fields[fieldKey];
+    if (!field) return true;
+    
+    const value = field.el.value.trim();
+    let isValid = true;
+    
+    if (field.el.hasAttribute('required') && !value) {
+      isValid = false;
+    }
+    
+    // Special validations
+    if (fieldKey === 'phone' && value) {
+      const phoneRegex = /^[0-9]{10,12}$/;
+      if (!phoneRegex.test(value.replace(/[^0-9]/g, ''))) {
+        isValid = false;
+      }
+    }
+    
+    if (fieldKey === 'nationalId' && value) {
+      const idRegex = /^[0-9]{8}$/;
+      if (!idRegex.test(value)) {
+        isValid = false;
+      }
+    }
+    
+    field.el.classList.toggle('error', !isValid);
+    field.error.classList.toggle('show', !isValid);
+    return isValid;
+  }
+
+  // Validate all fields
+  function validateAll() {
+    let allValid = true;
+    for (const key in fields) {
+      if (!validateField(key)) {
+        allValid = false;
+      }
+    }
+    
+    // Check travel support radio
+    const travelSupport = document.querySelector('input[name="travelSupport"]:checked');
+    const travelError = document.getElementById('travelSupportError');
+    if (!travelSupport) {
+      travelError.classList.add('show');
+      allValid = false;
+    } else {
+      travelError.classList.remove('show');
+    }
+    
+    return allValid;
+  }
+
+  // Add input listeners for real-time validation
+  for (const key in fields) {
+    const field = fields[key];
+    field.el.addEventListener('input', () => validateField(key));
+    field.el.addEventListener('change', () => validateField(key));
+  }
+
+  // Form submission
+  form.addEventListener('submit', function(e) {
     e.preventDefault();
-    const inputs = form.querySelectorAll('input, select, textarea');
+    
+    if (validateAll()) {
+      // Gather form data
+      const formData = {
+        fullName: document.getElementById('fullName').value,
+        dob: document.getElementById('dob').value,
+        nationalId: document.getElementById('nationalId').value,
+        passportExpiry: document.getElementById('passportExpiry').value,
+        gender: document.getElementById('gender').value,
+        phone: document.getElementById('phone').value,
+        address: document.getElementById('address').value,
+        county: document.getElementById('county').value,
+        preferredCountry: document.getElementById('preferredCountry').value,
+        jobCategory: document.getElementById('jobCategory').value,
+        skills: document.getElementById('skills').value,
+        experience: document.getElementById('experience').value,
+        workedAbroad: document.querySelector('input[name="workedAbroad"]:checked')?.value || '',
+        travelDate: document.getElementById('travelDate').value,
+        passportValidity: document.getElementById('passportValidity').value,
+        travelSupport: document.querySelector('input[name="travelSupport"]:checked')?.value || '',
+        documents: Array.from(document.querySelectorAll('.doc-check:checked')).map(cb => cb.value),
+        signature: document.getElementById('signature').value,
+        signatureDate: document.getElementById('signatureDate').value
+      };
+
+      // Log the data (you can send this to your server)
+      console.log('Application submitted:', formData);
+
+      // Show success message
+      form.querySelector('.form-actions').style.display = 'none';
+      formSuccess.style.display = 'block';
+      
+      // Scroll to success message
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Optionally send data via email or API
+      // Here we construct a mailto with the data
+      const subject = encodeURIComponent('Travel Application Form Submission');
+      const body = encodeURIComponent(
+        'Full Name: ' + formData.fullName + '%0D%0A' +
+        'Date of Birth: ' + formData.dob + '%0D%0A' +
+        'National ID: ' + formData.nationalId + '%0D%0A' +
+        'Passport Expiry: ' + formData.passportExpiry + '%0D%0A' +
+        'Gender: ' + formData.gender + '%0D%0A' +
+        'Phone: ' + formData.phone + '%0D%0A' +
+        'Address: ' + formData.address + '%0D%0A' +
+        'County: ' + formData.county + '%0D%0A' +
+        'Preferred Country: ' + formData.preferredCountry + '%0D%0A' +
+        'Job Category: ' + formData.jobCategory + '%0D%0A' +
+        'Skills: ' + formData.skills + '%0D%0A' +
+        'Experience: ' + formData.experience + ' years' + '%0D%0A' +
+        'Worked Abroad: ' + formData.workedAbroad + '%0D%0A' +
+        'Travel Date: ' + formData.travelDate + '%0D%0A' +
+        'Passport Validity: ' + formData.passportValidity + ' months' + '%0D%0A' +
+        'Travel Support: ' + formData.travelSupport + '%0D%0A' +
+        'Documents: ' + (formData.documents.join(', ') || 'None selected') + '%0D%0A' +
+        'Signature: ' + formData.signature + '%0D%0A' +
+        'Date: ' + formData.signatureDate
+      );
+      
+      // Uncomment to send via email
+      // window.location.href = 'mailto:info@kenyagulfconnect.co.ke?subject=' + subject + '&body=' + body;
+    } else {
+      // Scroll to first error
+      const firstError = form.querySelector('.form-group input.error, .form-group select.error');
+      if (firstError) {
+        firstError.focus();
+      }
+    }
+  });
+
+  // =============================================
+  // CONTACT FORM
+  // =============================================
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const inputs = contactForm.querySelectorAll('input, select, textarea');
     let body = '';
     inputs.forEach(i => { 
       if(i.previousElementSibling && i.previousElementSibling.tagName === 'LABEL'){ 
@@ -1112,7 +1655,9 @@
     document.getElementById('formMsg').style.display = 'block';
   });
 
-  // Scroll reveal
+  // =============================================
+  // SCROLL REVEAL
+  // =============================================
   const revealEls = document.querySelectorAll('.card, .step, .country, .testi, .flow-step');
   if('IntersectionObserver' in window){
     const io = new IntersectionObserver((entries)=>{
